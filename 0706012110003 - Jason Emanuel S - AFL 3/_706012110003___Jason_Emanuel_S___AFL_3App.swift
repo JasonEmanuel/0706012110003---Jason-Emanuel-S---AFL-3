@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct _706012110003___Jason_Emanuel_S___AFL_3App: App {
-    let persistenceController = PersistenceController.shared
-
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(modelData)
         }
     }
 }

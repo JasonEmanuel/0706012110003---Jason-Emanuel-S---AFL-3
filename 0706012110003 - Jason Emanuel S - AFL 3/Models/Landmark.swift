@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
+// Model for Landmark
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String

@@ -19,6 +19,7 @@ struct MapView: View {
             }
     }
     
+    //Sets MKMapView's visible region with a fixed span of 0.2 for both latitude and longitude based on a given coordinate.
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,

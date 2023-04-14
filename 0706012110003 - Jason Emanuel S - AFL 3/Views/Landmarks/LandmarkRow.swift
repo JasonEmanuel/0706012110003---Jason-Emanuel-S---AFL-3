@@ -27,12 +27,13 @@ struct LandmarkRow: View {
     }
 }
 
-// Display Preview
+// Display Preview of LandMark Row
 struct LandmarkRow_Previews: PreviewProvider {
     static var landmarks = ModelData().landmarks
     
     static var previews: some View {
         Group{
+            // Show landmark row in index 0 and 1
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
         }

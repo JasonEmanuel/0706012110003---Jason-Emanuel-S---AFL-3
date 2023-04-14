@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Model for Hike
 struct Hike: Codable, Hashable, Identifiable {
     var id: Int
     var name: String

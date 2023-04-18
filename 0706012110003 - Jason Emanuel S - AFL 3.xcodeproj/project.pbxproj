@@ -36,6 +36,7 @@
 		0449B21329EE207800A5F74F /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B21229EE207800A5F74F /* HikeView.swift */; };
 		0449B21529EE20AC00A5F74F /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B21429EE20AC00A5F74F /* HikeDetail.swift */; };
 		0449B21729EE20D600A5F74F /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B21629EE20D600A5F74F /* HikeGraph.swift */; };
+		0449B21A29EE22DC00A5F74F /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B21929EE22DC00A5F74F /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		0449B21229EE207800A5F74F /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		0449B21429EE20AC00A5F74F /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		0449B21629EE20D600A5F74F /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		0449B21929EE22DC00A5F74F /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		0449B1D529E8DDAE00A5F74F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0449B21829EE22C200A5F74F /* Categories */,
 				0449B20F29EE1FF300A5F74F /* Hikes */,
 				0449B19B29E4EEF200A5F74F /* ContentView.swift */,
 				0449B1EE29E8F8F600A5F74F /* Badges */,
@@ -247,6 +250,14 @@
 				0449B21629EE20D600A5F74F /* HikeGraph.swift */,
 			);
 			path = Hikes;
+			sourceTree = "<group>";
+		};
+		0449B21829EE22C200A5F74F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0449B21929EE22DC00A5F74F /* CategoryHome.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +413,7 @@
 				0449B1DD29E8E2BA00A5F74F /* LandmarkList.swift in Sources */,
 				0449B1DF29E8E43200A5F74F /* LandmarkDetail.swift in Sources */,
 				0449B21129EE200D00A5F74F /* GraphCapsule.swift in Sources */,
+				0449B21A29EE22DC00A5F74F /* CategoryHome.swift in Sources */,
 				0449B1EB29E8F75D00A5F74F /* RotatedBadgeSymbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

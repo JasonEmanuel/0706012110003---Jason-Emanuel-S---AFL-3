@@ -72,6 +72,7 @@
 		0449B22729EE2CF200A5F74F /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B22629EE2CF200A5F74F /* HikeBadge.swift */; };
 		04F2802D29F98D6200F9000E /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2802C29F98D6200F9000E /* LandmarkCommands.swift */; };
 		04F2802E29F98D6200F9000E /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2802C29F98D6200F9000E /* LandmarkCommands.swift */; };
+		04F2803029F9949200F9000E /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2802F29F9949200F9000E /* LandmarkSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		0449B22429EE2B7500A5F74F /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		0449B22629EE2CF200A5F74F /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
 		04F2802C29F98D6200F9000E /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
+		04F2802F29F9949200F9000E /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				041E014B29F14DDF009C4A8E /* Preview Content */,
 				0448EA5F29F9546800CE50EF /* LandmarkDetail.swift */,
 				04F2802C29F98D6200F9000E /* LandmarkCommands.swift */,
+				04F2802F29F9949200F9000E /* LandmarkSettings.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				0448EA5329F9533B00CE50EF /* FavoriteButton.swift in Sources */,
 				0448EA5D29F9533B00CE50EF /* LandmarkList.swift in Sources */,
 				0448EA5629F9533B00CE50EF /* ModelData.swift in Sources */,
+				04F2803029F9949200F9000E /* LandmarkSettings.swift in Sources */,
 				0448EA5729F9533B00CE50EF /* Hike.swift in Sources */,
 				0448EA5529F9533B00CE50EF /* LandmarkRow.swift in Sources */,
 				041E015229F14DDF009C4A8E /* MacLandmarks.xcdatamodeld in Sources */,

@@ -20,5 +20,11 @@ struct _706012110003___Jason_Emanuel_S___AFL_3App: App {
         .commands {
             LandmarkCommands()
         }
+        
+        #if os(macOS)
+        Settings {
+            LandmarkSettings()
+        }
+        #endif
     }
 }

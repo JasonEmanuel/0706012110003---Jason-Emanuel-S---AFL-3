@@ -16,5 +16,9 @@ struct _706012110003___Jason_Emanuel_S___AFL_3App: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        // apply LandmarkCommands
+        .commands {
+            LandmarkCommands()
+        }
     }
 }

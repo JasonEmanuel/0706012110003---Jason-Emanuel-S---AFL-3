@@ -70,6 +70,8 @@
 		0449B22329EE2B5400A5F74F /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B22229EE2B5400A5F74F /* ProfileHost.swift */; };
 		0449B22529EE2B7500A5F74F /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B22429EE2B7500A5F74F /* ProfileSummary.swift */; };
 		0449B22729EE2CF200A5F74F /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B22629EE2CF200A5F74F /* HikeBadge.swift */; };
+		04F2802D29F98D6200F9000E /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2802C29F98D6200F9000E /* LandmarkCommands.swift */; };
+		04F2802E29F98D6200F9000E /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2802C29F98D6200F9000E /* LandmarkCommands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +163,7 @@
 		0449B22229EE2B5400A5F74F /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		0449B22429EE2B7500A5F74F /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		0449B22629EE2CF200A5F74F /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		04F2802C29F98D6200F9000E /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,7 @@
 				041E015029F14DDF009C4A8E /* MacLandmarks.xcdatamodeld */,
 				041E014B29F14DDF009C4A8E /* Preview Content */,
 				0448EA5F29F9546800CE50EF /* LandmarkDetail.swift */,
+				04F2802C29F98D6200F9000E /* LandmarkCommands.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -657,6 +661,7 @@
 				0448EA5429F9533B00CE50EF /* _706012110003___Jason_Emanuel_S___AFL_3App.swift in Sources */,
 				0448EA6029F9546800CE50EF /* LandmarkDetail.swift in Sources */,
 				041E014829F14DDC009C4A8E /* ContentView.swift in Sources */,
+				04F2802E29F98D6200F9000E /* LandmarkCommands.swift in Sources */,
 				0448EA5329F9533B00CE50EF /* FavoriteButton.swift in Sources */,
 				0448EA5D29F9533B00CE50EF /* LandmarkList.swift in Sources */,
 				0448EA5629F9533B00CE50EF /* ModelData.swift in Sources */,
@@ -695,6 +700,7 @@
 				0449B22029EE2A6100A5F74F /* Profile.swift in Sources */,
 				0449B1A329E4EEF500A5F74F /* Persistence.swift in Sources */,
 				0449B1CB29E4F61E00A5F74F /* MapView.swift in Sources */,
+				04F2802D29F98D6200F9000E /* LandmarkCommands.swift in Sources */,
 				0449B22329EE2B5400A5F74F /* ProfileHost.swift in Sources */,
 				0449B1E129E8EFC200A5F74F /* FavoriteButton.swift in Sources */,
 				0449B19C29E4EEF200A5F74F /* ContentView.swift in Sources */,

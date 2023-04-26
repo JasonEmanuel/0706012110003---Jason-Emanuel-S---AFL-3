@@ -17,28 +17,40 @@ struct BadgeBackground: View {
                 let xScale : CGFloat = 0.832
                 let xOffset = (width * (1.0 - xScale)) / 2.0
                 width *= xScale
+                // create a new path to which the path will move to
                 path.move(
                     to: CGPoint(
+                        // calculate x as 95% of rectangle + offset
                         x: width * 0.95 + xOffset,
+                        // calculate y as 20% of height + HexagonParameters.adjustment
                         y: height * (0.20 + HexagonParameters.adjustment)
                     )
                 )
                 
+                // loop through each segment in HexagonParameters.segment array
                 HexagonParameters.segments.forEach { segment in
+                    // add a straight line to the current point in path
                     path.addLine(
                         to: CGPoint(
+                            // calculate x coordinate by multiplying width with segment's line.x property added with xOffset
                             x: width * segment.line.x + xOffset,
+                            // calculate y coordinate by multiplying height with segment's line.y property
                             y: height * segment.line.y
                         )
                     )
                     
+                    // add a quadratic curve to the current point in path
                     path.addQuadCurve(
                         to: CGPoint(
+                            // calculate x coordinate by multiplying width with segment's curve.x property added with xOffset
                             x: width * segment.curve.x + xOffset,
+                            // calculate y coordinate by multiplying height with segment's curve.y property
                             y: height * segment.curve.y
                         ),
                         control: CGPoint(
+                            // calculate x coordinate by multiplying width with segment's control.x property added with xOffset
                             x: width * segment.control.x + xOffset,
+                            // calculate y coordinate by multiplying height with segment's control.y property
                             y: height * segment.control.y
                         )
                     )

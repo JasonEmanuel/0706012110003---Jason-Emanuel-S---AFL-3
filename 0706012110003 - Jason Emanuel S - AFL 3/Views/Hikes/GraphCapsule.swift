@@ -14,15 +14,18 @@ struct GraphCapsule: View, Equatable {
     var range: Range<Double>
     var overallRange: Range<Double>
 
+    // calculate the height ratio of the capsule
     var heightRatio: CGFloat {
         max(CGFloat(magnitude(of: range) / magnitude(of: overallRange)), 0.15)
     }
-
+    
+    // calculate the offset ratio for the capsule height
     var offsetRatio: CGFloat {
         CGFloat((range.lowerBound - overallRange.lowerBound) / magnitude(of: overallRange))
     }
 
     var body: some View {
+        // create a rounded rectangle
         Capsule()
             .fill(color)
             .frame(height: height * heightRatio)
@@ -30,6 +33,7 @@ struct GraphCapsule: View, Equatable {
     }
 }
 
+// Show preview of GraphCapsule
 struct GraphCapsule_Previews: PreviewProvider {
     static var previews: some View {
         GraphCapsule(

@@ -25,7 +25,7 @@ struct LandmarkList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
-
+                // Show all the landmarks
                 ForEach(filteredLandmarks) {landmark in
                     NavigationLink {
                         LandmarkDetail(landmark: landmark)
@@ -35,6 +35,7 @@ struct LandmarkList: View {
                 }
             }
             .navigationTitle("Landmarks")
+            .frame(minWidth: 300)
         }
     
         

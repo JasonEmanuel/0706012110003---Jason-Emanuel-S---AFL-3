@@ -13,17 +13,29 @@ struct LandmarkRow: View {
     var body: some View {
         HStack{
             landmark.image
+                // make the image resizable
                 .resizable()
                 .frame(width: 50, height: 50)
-            Text(landmark.name)
+                .cornerRadius(5)
+            VStack(alignment: .leading) {
+                Text(landmark.name)
+                    // bolds the text
+                    .bold()
+                Text(landmark.park)
+                    .font(.caption)
+                    // change foreground color to secondary color
+                    .foregroundColor(.secondary)
+            }
             
             Spacer()
             
+            // set the star color to yellow if the isFavorite is true
             if landmark.isFavorite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
             }
         }
+        .padding(.vertical, 4)
     }
 }
 
@@ -33,7 +45,7 @@ struct LandmarkRow_Previews: PreviewProvider {
     
     static var previews: some View {
         Group{
-            // Show landmark row in index 0 and 1
+            // Show preview of landmark row in index 0 and 1
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
         }

@@ -13,7 +13,9 @@ struct PageView<Page: View>: View {
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
+            // calls the PageViewController to display pages
             PageViewController(pages: pages, currentPage: $currentPage)
+            // calls the PageControl to show current page number and allows user to navigate between pages
             PageControl(numberOfPages: pages.count, currentPage: $currentPage)
                 .frame(width: CGFloat(pages.count * 18))
                 .padding(.trailing)
@@ -21,6 +23,7 @@ struct PageView<Page: View>: View {
     }
 }
 
+// Show preview of PageView
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
         PageView(pages: ModelData().features.map { FeatureCard(landmark: $0) })

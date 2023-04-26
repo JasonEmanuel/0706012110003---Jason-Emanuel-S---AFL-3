@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    // access data drom ModelData
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
     
@@ -16,10 +17,12 @@ struct CategoryHome: View {
         //build hierarchical navigation structures in your app
         NavigationView {
             List {
+                // display PageView of FeatureCard
                 PageView(pages: modelData.features.map { FeatureCard(landmark: $0)})
                     .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
                 
+                // display CategoryRow for each keys
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
@@ -27,6 +30,7 @@ struct CategoryHome: View {
             }
             .listStyle(.inset)
             .navigationTitle("Featured")
+            // add a toolbar button to show the user profile
             .toolbar {
                 Button {
                     showingProfile.toggle()
@@ -34,6 +38,8 @@ struct CategoryHome: View {
                     Label("User Profile", systemImage: "person.crop.circle")
                 }
             }
+            
+            // show the ProfileHost if showingProfile is true
             .sheet(isPresented: $showingProfile) {
                 ProfileHost()
                     .environmentObject(modelData)
@@ -42,6 +48,7 @@ struct CategoryHome: View {
     }
 }
 
+// Show preview of CategoryHome
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()

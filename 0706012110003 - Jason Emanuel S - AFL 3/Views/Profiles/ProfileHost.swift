@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileHost: View {
+    // to toggle between edit mode and display mode
     @Environment(\.editMode) var editMode
     @EnvironmentObject var modelData: ModelData
     @State private var draftProfile = Profile.default
@@ -15,6 +16,7 @@ struct ProfileHost: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20 ) {
             HStack {
+                // display cancel button if edit mode is active
                 if editMode?.wrappedValue == .active {
                     Button("Cancel", role: .cancel) {
                         draftProfile = modelData.profile
@@ -28,8 +30,10 @@ struct ProfileHost: View {
             
             
             if editMode?.wrappedValue == .inactive {
+                // displays ProfileSummary if edit mode is inactive
                 ProfileSummary(profile: modelData.profile)
             } else {
+                // displays ProfileEditor if edit mode is active
                 ProfileEditor(profile: $draftProfile)
                     .onAppear {
                         draftProfile = modelData.profile
@@ -43,6 +47,7 @@ struct ProfileHost: View {
     }
 }
 
+// Show preview of ProfileHost
 struct ProfileHost_Previews: PreviewProvider {
     static var previews: some View {
         ProfileHost()

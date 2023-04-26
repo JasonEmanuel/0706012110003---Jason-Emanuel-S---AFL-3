@@ -12,6 +12,7 @@ struct HikeBadge: View {
 
     var body: some View {
         VStack(alignment: .center) {
+            // calls the badge and displays it
             Badge()
                 .frame(width: 300, height: 300)
                 .scaleEffect(1.0 / 3.0)
@@ -23,6 +24,7 @@ struct HikeBadge: View {
     }
 }
 
+// Show preview for HikeBadge
 struct HikeBadge_Previews: PreviewProvider {
     static var previews: some View {
         HikeBadge(name: "Preview Testing")

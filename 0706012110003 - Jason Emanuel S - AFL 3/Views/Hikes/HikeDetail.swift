@@ -24,6 +24,7 @@ struct HikeDetail: View {
                 .frame(height: 200)
 
             HStack(spacing: 25) {
+                // Call each buttons
                 ForEach(buttons, id: \.0) { value in
                     Button {
                         dataToShow = value.1

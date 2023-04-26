@@ -18,8 +18,10 @@ struct CategoryRow: View {
                 .padding(.leading, 15)
                 .padding(.top, 5)
             
+            // horizontal scroll view
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 0) {
+                    // loop to show eac hitems in landmark
                     ForEach(items) { landmark in
                         NavigationLink {
                             LandmarkDetail(landmark: landmark)
@@ -34,6 +36,7 @@ struct CategoryRow: View {
     }
 }
 
+// Show preview of CategoryRow
 struct CategoryRow_Previews: PreviewProvider {
     static var landmarks = ModelData().landmarks
 

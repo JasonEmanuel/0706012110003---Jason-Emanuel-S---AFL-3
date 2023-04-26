@@ -20,6 +20,20 @@
 		0421B32629EE36C800E917CE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421B32529EE36C800E917CE /* PageViewController.swift */; };
 		0421B32829EE393200E917CE /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421B32729EE393200E917CE /* FeatureCard.swift */; };
 		0421B32A29EE399A00E917CE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421B32929EE399A00E917CE /* PageView.swift */; };
+		0448EA5229F9533B00CE50EF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1C829E4F51400A5F74F /* CircleImage.swift */; };
+		0448EA5329F9533B00CE50EF /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1E029E8EFC200A5F74F /* FavoriteButton.swift */; };
+		0448EA5429F9533B00CE50EF /* _706012110003___Jason_Emanuel_S___AFL_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B19929E4EEF200A5F74F /* _706012110003___Jason_Emanuel_S___AFL_3App.swift */; };
+		0448EA5529F9533B00CE50EF /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1DA29E8DF0B00A5F74F /* LandmarkRow.swift */; };
+		0448EA5629F9533B00CE50EF /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1D229E8DAB000A5F74F /* ModelData.swift */; };
+		0448EA5729F9533B00CE50EF /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1F129E8F9C800A5F74F /* Hike.swift */; };
+		0448EA5829F9533B00CE50EF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B21F29EE2A6100A5F74F /* Profile.swift */; };
+		0448EA5929F9533B00CE50EF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1CA29E4F61E00A5F74F /* MapView.swift */; };
+		0448EA5A29F9533B00CE50EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449B19D29E4EEF500A5F74F /* Assets.xcassets */; };
+		0448EA5B29F9533B00CE50EF /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0449B1CC29E8D7F800A5F74F /* landmarkData.json */; };
+		0448EA5C29F9533B00CE50EF /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0449B20529E8FBA900A5F74F /* hikeData.json */; };
+		0448EA5D29F9533B00CE50EF /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1DC29E8E2BA00A5F74F /* LandmarkList.swift */; };
+		0448EA5E29F9533B00CE50EF /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B1CE29E8D81200A5F74F /* Landmark.swift */; };
+		0448EA6029F9546800CE50EF /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448EA5F29F9546800CE50EF /* LandmarkDetail.swift */; };
 		0449B19A29E4EEF200A5F74F /* _706012110003___Jason_Emanuel_S___AFL_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B19929E4EEF200A5F74F /* _706012110003___Jason_Emanuel_S___AFL_3App.swift */; };
 		0449B19C29E4EEF200A5F74F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449B19B29E4EEF200A5F74F /* ContentView.swift */; };
 		0449B19E29E4EEF500A5F74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449B19D29E4EEF500A5F74F /* Assets.xcassets */; };
@@ -107,6 +121,7 @@
 		0421B32529EE36C800E917CE /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		0421B32729EE393200E917CE /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		0421B32929EE399A00E917CE /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		0448EA5F29F9546800CE50EF /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		0449B19629E4EEF200A5F74F /* 0706012110003 - Jason Emanuel S - AFL 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0706012110003 - Jason Emanuel S - AFL 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449B19929E4EEF200A5F74F /* _706012110003___Jason_Emanuel_S___AFL_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_706012110003___Jason_Emanuel_S___AFL_3App.swift"; sourceTree = "<group>"; };
 		0449B19B29E4EEF200A5F74F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -203,6 +218,7 @@
 				041E015329F14DDF009C4A8E /* MacLandmarks.entitlements */,
 				041E015029F14DDF009C4A8E /* MacLandmarks.xcdatamodeld */,
 				041E014B29F14DDF009C4A8E /* Preview Content */,
+				0448EA5F29F9546800CE50EF /* LandmarkDetail.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -312,11 +328,11 @@
 		0449B1D529E8DDAE00A5F74F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0449B19B29E4EEF200A5F74F /* ContentView.swift */,
 				0421B32429EE36A700E917CE /* PageView */,
 				0449B22129EE2B3A00A5F74F /* Profiles */,
 				0449B21829EE22C200A5F74F /* Categories */,
 				0449B20F29EE1FF300A5F74F /* Hikes */,
-				0449B19B29E4EEF200A5F74F /* ContentView.swift */,
 				0449B1EE29E8F8F600A5F74F /* Badges */,
 				0449B1E329E8F0DB00A5F74F /* Landmarks */,
 				0449B1E229E8F0B000A5F74F /* Helpers */,
@@ -580,7 +596,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				041E014D29F14DDF009C4A8E /* Preview Assets.xcassets in Resources */,
+				0448EA5B29F9533B00CE50EF /* landmarkData.json in Resources */,
+				0448EA5A29F9533B00CE50EF /* Assets.xcassets in Resources */,
 				041E014A29F14DDF009C4A8E /* Assets.xcassets in Resources */,
+				0448EA5C29F9533B00CE50EF /* hikeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,8 +649,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0448EA5E29F9533B00CE50EF /* Landmark.swift in Sources */,
 				041E014F29F14DDF009C4A8E /* Persistence.swift in Sources */,
+				0448EA5829F9533B00CE50EF /* Profile.swift in Sources */,
+				0448EA5229F9533B00CE50EF /* CircleImage.swift in Sources */,
+				0448EA5929F9533B00CE50EF /* MapView.swift in Sources */,
+				0448EA5429F9533B00CE50EF /* _706012110003___Jason_Emanuel_S___AFL_3App.swift in Sources */,
+				0448EA6029F9546800CE50EF /* LandmarkDetail.swift in Sources */,
 				041E014829F14DDC009C4A8E /* ContentView.swift in Sources */,
+				0448EA5329F9533B00CE50EF /* FavoriteButton.swift in Sources */,
+				0448EA5D29F9533B00CE50EF /* LandmarkList.swift in Sources */,
+				0448EA5629F9533B00CE50EF /* ModelData.swift in Sources */,
+				0448EA5729F9533B00CE50EF /* Hike.swift in Sources */,
+				0448EA5529F9533B00CE50EF /* LandmarkRow.swift in Sources */,
 				041E015229F14DDF009C4A8E /* MacLandmarks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

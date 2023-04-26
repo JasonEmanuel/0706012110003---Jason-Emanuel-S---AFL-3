@@ -12,6 +12,7 @@ struct FavoriteButton: View {
     
     var body: some View {
         Button {
+            // for toggling the isSet boolean to true or false
             isSet.toggle()
         } label: {
             Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
@@ -21,6 +22,7 @@ struct FavoriteButton: View {
     }
 }
 
+// Shows the preview of FavoriteButton
 struct FavoriteButton_Previews: PreviewProvider {
     static var previews: some View {
         FavoriteButton(isSet: .constant(true))

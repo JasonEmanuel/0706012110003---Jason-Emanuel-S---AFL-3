@@ -45,6 +45,7 @@ struct BadgeSymbol: View {
     }
 }
 
+// Show preview of BadgeSymbol
 struct BadgeSymbol_Previews: PreviewProvider {
     static var previews: some View {
         BadgeSymbol()

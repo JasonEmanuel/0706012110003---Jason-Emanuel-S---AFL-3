@@ -18,6 +18,7 @@ struct LandmarkDetail: View {
     var body: some View{
         // Scroll View the detail page
         ScrollView {
+            // show the map view
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)

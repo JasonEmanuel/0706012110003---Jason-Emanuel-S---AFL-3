@@ -17,6 +17,7 @@ struct ContentView: View {
     }
     
     var body: some View {
+        // create TabView with two tabs
         TabView(selection: $selection) {
             CategoryHome()
                 .tabItem {

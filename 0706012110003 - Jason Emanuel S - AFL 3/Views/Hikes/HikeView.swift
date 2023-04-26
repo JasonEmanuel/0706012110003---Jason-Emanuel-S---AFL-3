@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// extention for move and fade animation
 extension AnyTransition {
     static var moveAndFade: AnyTransition {
         .asymmetric(
@@ -23,6 +24,7 @@ struct HikeView: View {
     var body: some View {
         VStack {
             HStack {
+                // displays the hike graph
                 HikeGraph(hike: hike, path: \.elevation)
                     .frame(width: 50, height: 30)
                 
@@ -35,7 +37,7 @@ struct HikeView: View {
                 Spacer()
                 
                 Button {
-                    // Do the animation
+                    // Do the animation for the button
                     withAnimation {
                         showDetail.toggle()
                     }

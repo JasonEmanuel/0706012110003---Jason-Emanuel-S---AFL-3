@@ -35,13 +35,22 @@ struct HikeGraph: View {
     }
 
     var body: some View {
+        
+        // extract observations from the hike data
         let data = hike.observations
+        
+        // determine the overall range for the data
         let overallRange = rangeOfRanges(data.lazy.map { $0[keyPath: path] })
+        
+        // find the maximum magnitude
         let maxMagnitude = data.map { magnitude(of: $0[keyPath: path]) }.max()!
+        
+        // determine the height ratio for the graph bars
         let heightRatio = 1 - CGFloat(maxMagnitude / magnitude(of: overallRange))
 
         return GeometryReader { proxy in
             HStack(alignment: .bottom, spacing: proxy.size.width / 120) {
+                // iterate thorugh the data and create a graph capsule for each observations
                 ForEach(Array(data.enumerated()), id: \.offset) { index, observation in
                     GraphCapsule(
                         index: index,
@@ -59,6 +68,7 @@ struct HikeGraph: View {
     }
 }
 
+// return the range that spans all input range
 func rangeOfRanges<C: Collection>(_ ranges: C) -> Range<Double>
     where C.Element == Range<Double> {
     guard !ranges.isEmpty else { return 0..<0 }
@@ -67,6 +77,7 @@ func rangeOfRanges<C: Collection>(_ ranges: C) -> Range<Double>
     return low..<high
 }
 
+// returns the magnitude of a range
 func magnitude(of range: Range<Double>) -> Double {
     range.upperBound - range.lowerBound
 }
@@ -76,10 +87,16 @@ struct HikeGraph_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
+            
+            // preview of elevation graph
             HikeGraph(hike: hike, path: \.elevation)
                 .frame(height: 200)
+            
+            // preview of heart rate graph
             HikeGraph(hike: hike, path: \.heartRate)
                 .frame(height: 200)
+            
+            // preview of pace graph
             HikeGraph(hike: hike, path: \.pace)
                 .frame(height: 200)
         }

@@ -12,6 +12,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
     @Binding var currentPage: Int
     
+    // make coordinator
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
@@ -26,11 +27,13 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
         return pageViewController
     }
     
+    // updates view controller
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
+    // class that manages UIPageViewController
     class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var parent: PageViewController
         var controllers = [UIViewController]()
